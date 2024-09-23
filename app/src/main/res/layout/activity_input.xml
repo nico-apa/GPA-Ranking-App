@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:textSize="17sp"
+        android:id="@+id/header"
+        android:paddingTop="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd = "12dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="32sp"
+        android:layout_below="@+id/header"
+        android:text="Rate our App!"
+        android:id="@+id/title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:minWidth="120dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:rating="3"
+        android:isIndicator="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="30dp"
+        android:padding="10dp"
+        android:textSize="28sp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#14D53D"
+        android:text="Enter Rating"
+        android:id="@+id/enter_button"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="40dp"
+        android:padding="10dp"
+        android:layout_below="@+id/title"
+        android:textSize="28sp"
+        android:backgroundTint="#6A42B1"
+        android:text="     Home    "
+        android:id="@+id/home_page"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:backgroundTint="#6A42B1"
+        android:layout_toRightOf="@+id/home_page"
+        android:layout_alignBottom="@+id/home_page"
+        android:layout_marginStart="20dp"
+        android:text=" Rankings  "
+        android:id="@+id/rank_page"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#FDDD"
+        android:id="@+id/ad_view"
+        android:layout_gravity="center"
+        android:layout_below="@+id/rank_page"
+        android:layout_marginTop="100dp">
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
