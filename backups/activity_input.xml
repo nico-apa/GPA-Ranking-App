@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text=""
+        android:textSize="17sp"
+        android:id="@+id/header"
+        android:paddingTop="8dp"
+        android:gravity="right"
+        android:paddingStart="12dp"
+        android:paddingEnd = "12dp"
+        android:background="#2196F3"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="32sp"
+        android:layout_below="@+id/header"
+        android:text="Input Grades"
+        android:id="@+id/title"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:minWidth="120dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:background="#DDDDDDDD"
+        android:layout_below="@+id/title"
+        android:text="Class Name :"
+        android:id="@+id/label_Class"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:minWidth="120dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:id="@+id/input_Class"
+        android:layout_toEndOf="@+id/label_Class"
+        android:layout_alignBottom="@+id/label_Class"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:background="#DDDDDDDD"
+        android:gravity="center"
+        android:text="Grade :"
+        android:id="@+id/label_Grade"
+        android:layout_below="@+id/label_Class"
+        android:layout_marginTop="60dp"
+        android:layout_alignStart="@+id/label_Class"
+        android:layout_alignEnd="@+id/label_Class" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        android:id="@+id/input_Grade"
+        android:layout_below="@+id/label_Class"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/label_Grade"
+        android:layout_alignBottom="@+id/label_Grade"
+        android:layout_alignEnd="@id/input_Class" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:background="#DDDDDDDD"
+        android:gravity="center"
+        android:text="Credit :"
+        android:id="@+id/label_Credit"
+        android:layout_below="@+id/label_Grade"
+        android:layout_marginTop="60dp"
+        android:layout_alignStart="@+id/label_Grade"
+        android:layout_alignEnd="@+id/label_Grade" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:id="@+id/input_Credit"
+        android:layout_below="@+id/label_Grade"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/label_Credit"
+        android:layout_alignBottom="@+id/label_Credit"
+        android:layout_alignEnd="@id/input_Grade" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:padding="10dp"
+        android:layout_below="@+id/label_Credit"
+        android:textSize="28sp"
+        android:backgroundTint="#4CAF50"
+        android:text=" Enter Grades "
+        android:id="@+id/enter_grades" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        android:padding="10dp"
+        android:layout_below="@+id/enter_grades"
+        android:textSize="28sp"
+        android:backgroundTint="#6A42B1"
+        android:text="     Home    "
+        android:id="@+id/home_page" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="28sp"
+        android:backgroundTint="#6A42B1"
+        android:layout_toEndOf="@+id/home_page"
+        android:layout_alignBottom="@+id/home_page"
+        android:layout_marginStart="20dp"
+        android:text=" Rankings  "
+        android:id="@+id/rank_page" />
+
+</RelativeLayout>
